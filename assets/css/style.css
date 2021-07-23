@@ -1,0 +1,138 @@
+/* font-family: 'Open Sans', sans-serif; */
+html, body {
+    font-family: 'Open Sans', sans-serif;
+}
+body {
+    height:100vh;
+    display:flex; 
+    flex-direction:column; 
+}
+
+.mobile {
+    display: none;
+}
+.desktop {
+    display: block;
+}
+
+.desktop.navbar {
+    background-color: #e83e8c;
+}
+.suricata-nav {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.suricata-nav img {
+    height: 2.5em;
+    width: auto;
+}
+.suricata-nav .empty {
+    width: auto;
+}
+.suricata-nav .menu {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.suricata-nav .menu .menu-item {
+    margin: 5px 20px;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+.content {
+    height: auto;
+    padding-bottom: 20px;
+}
+.content h1 {
+    font-size: 60px;
+    text-align: center;
+    font-weight: bold;
+    color: #707070;
+    padding: 70px 0;
+}
+#content-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#content-container .card {
+    margin-bottom: 60px;
+}
+
+footer {
+    margin-top:auto;
+}
+
+footer .container-cards {
+    background-color: #17a2b8;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 58px 5px;
+}
+footer .container-cards p {
+    margin-bottom: 0;
+    font-size: 40px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+footer .container-cards .cards {
+    display: flex;
+    justify-content: space-between;
+    width: 44%;
+}
+footer .container-cards .cards i {
+    font-size: 53px;
+    color: #FFFFFF;
+}
+footer .suricata-icon {
+    background-color: #e83e8c;
+    text-align: center;
+}
+footer .suricata-icon img {
+    height: 100px;
+    width: auto;
+    margin: 20px 0 40px 0;
+}
+
+@media screen and (max-width: 800px) {
+    .mobile {
+        display: block;
+    }
+    .desktop {
+        display: none;
+    }
+    .icon-display-menu::after {
+        display: none;
+    }
+    .suricata-nav .nav .dropdown .dropdown-menu {
+        background-color: #e83e8c;
+        right: 0.1px;
+        left: unset;
+    }
+    .suricata-nav .nav .dropdown .dropdown-menu .dropdown-item:hover {
+        background-color: #f06eab;
+    }
+    .suricata-nav .nav .dropdown .dropdown-menu .dropdown-item {
+        color: #FFFFFF;
+    }
+
+    .content h1 {
+        font-size: 35px;
+        text-align: center;
+        font-weight: bold;
+        color: #707070;
+        padding: 35px 0;
+    }
+
+    footer .container-cards {
+        display: none;
+    }
+    footer .suricata-icon img {
+        height: 67px;
+        width: auto;
+        margin: 58px 0;
+    }
+}
