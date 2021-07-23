@@ -14,6 +14,4 @@ Este Mockup fue entregado previamente para hacer el desafío:
 
 ### Desafío Original
 
-Documento original con el desafío disponible en PDF.
-
-{{/doc/desafio_suricata.pdf}}
+Documento original con el desafío disponible en [PDF](./doc/desafio_suricata.pdf).
